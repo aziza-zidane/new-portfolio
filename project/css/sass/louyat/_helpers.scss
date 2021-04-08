@@ -1,0 +1,26 @@
+$mainColor: #10161d;
+$secondColor: #dd272d;
+// $secondColor:#800000
+
+$extraSmallMobail: '(max-width:400px)';
+$exMobail: '(max-width:400px)';
+$spcilal-mobobil: '(min-width:401px) and (max-width:575px)';
+$maxMobail: '(max-width:576px)';
+$minMobail: '(max-width:767px)';
+$maxSmmal: '(min-width:576px) and (max-width:767px)';
+$minMedium: '(min-width:768px) and(max-width:991px)';
+$larg: '(min-width:992px)';
+$minLarge: '(min-width:1200px)';
+
+%back-main {
+    background-color: $mainColor;
+  }
+  %back-second {
+    background-color: $secondColor;
+  }
+  %color-main {
+    color: $mainColor;
+  }
+  %color-second {
+    color: $secondColor;
+  }

@@ -1,0 +1,47 @@
+header{
+   position: relative; 
+   img{
+       display: block;
+       height: 200px;
+       width: 200px;
+       position: relative;
+       z-index: 13;
+       border-radius: 50%;
+       opacity: 0.7; 
+       box-shadow: 0 8px 6px -6px black; 
+       top: 50px;
+        border:2px solid $secondColor  ;
+    
+   };
+
+      h1{
+         opacity: 1;
+         z-index: 10;
+          
+         // 
+         position: relative;
+         line-height: 2;
+         letter-spacing: 2px;
+         font-family: 'Playfair Display', serif;
+         width: 40%;
+         @media #{$maxMobail} {
+           font-size: 35px;
+           width: auto;
+         }
+         @media #{$maxSmmal} {
+           width: auto;
+         }
+         .name {
+           @extend %color-second;
+           text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.9),
+             0px -5px 35px rgba(255, 255, 255, 0.9);
+             margin-left: 120px;
+         }
+       }
+       hr{ height: 2px;
+      background-color:#fff ;
+   width: 20%;
+margin-bottom: 40px;}
+.h4{background-color: rgba($secondColor, 0.5);
+display: block;}
+}
