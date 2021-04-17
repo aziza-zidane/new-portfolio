@@ -1,0 +1,237 @@
+div.wrapper.d-flex.w-100
+  div.sidebar.pt-4
+    a.navbar-brand.ps-3(href='#') Navbar
+    nav.navbar.navbar-expand-lg.navbar-light
+      .container-fluid
+          ul.navbar-nav.w-100
+            li.nav-item.mt-5
+              a.nav-link.active(aria-current='page' href='#')
+                i.fas.fa-sliders-h.fa-lg.pe-3 
+                span Deshbard
+            li.nav-item
+              a.nav-link(href='#') 
+                i.fas.fa-user.fa-lg.pe-3 
+                span profil
+            li.nav-item
+              a.nav-link(href='#') 
+                i.fas.fa-cog.fa-lg.pe-3 
+                span sittings    
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                i(class="fas fa-suitcase pe-3")
+                span Elements
+                i(class="fas fa-sort-down  ps-5 ms-3")
+              ul.dropdown-menu.bg-dark(aria-labelledby='navbarDropdown')
+                li
+                  a.dropdown-item(href='#')
+                   i(class="fas fa-arrow-right pe-3")
+                   span Action
+                li
+                  a.dropdown-item(href='#')
+                   i(class="fas fa-arrow-right pe-3")
+                   span Action
+                li
+                  a.dropdown-item(href='#')
+                   i(class="fas fa-arrow-right pe-3")
+                   span Action      
+
+            li.nav-item
+              a.nav-link(href='#') 
+                i.fas.fa-cog.fa-lg.pe-3 
+                span sittings 
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                i(class="fas fa-suitcase pe-3")
+                span Elements
+                i(class="fas fa-sort-down  ps-5 ms-3")
+              ul.dropdown-menu.bg-dark(aria-labelledby='navbarDropdown')
+                li
+                  a.dropdown-item(href='#')
+                   i(class="fas fa-arrow-right pe-3")
+                   span Action
+                li
+                  a.dropdown-item(href='#')
+                   i(class="fas fa-arrow-right pe-3")
+                   span Action
+                li
+                  a.dropdown-item(href='#')
+                   i(class="fas fa-arrow-right pe-3")
+                   span Action      
+             
+  main.w-100
+   .header.p-4.d-flex.justify-content-between
+     div.d-flex
+      i.fas.fa-bars.fa-lg.p-2.toggle-sidebar
+      form.d-md-flex.d-none.bg-light.p-3.mx-3
+        input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+        i.fas.fa-search.fa-lg.ml-2.mt-2.text-dark
+      i.fa.fa-expand.fa-lg.p-2.toggle-fullscreen 
+     div.d-md-flex.d-flex.mr-auto.all-notification
+       div.notification-container.notification-number.dropdown.pt-3.pe-4
+        i(class="fas fa-bell pe-4 notificatition" "#navbarScrollingDropdown" data-bs-toggle='dropdown' aria-expanded='false')
+        ul.dropdown-menu(aria-labelledby='navbarScrollingDropdown')
+          li.bg-dark.p-2
+            h6.text-center.text-white notifictions
+          li
+            a.dropdown-item.p-1(href='#')
+             div.row
+              div.col-2
+                i(class="fas fa-pen-nib p-2 text-primary")
+              div.col-10.content-notification
+                div.fw-bold update complete
+                div 
+                 |Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                div 30m ago
+          li
+            a.dropdown-item.p-1(href='#')
+              div.row
+                div.col-2
+                 i(class="far fa-user p-2 text-success")
+                div.col-10.content-notification
+                 div.fw-bold update complete
+                 div 
+                  |Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 div 30m ago    
+          li
+            a.dropdown-item.p-1(href='#')
+             div.row
+              div.col-2
+                i(class="fas fa-comments p-2 text-danger")
+              div.col-10.content-notification
+                div.fw-bold new connectin
+                div 
+                 |Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                div 30m ago   
+          li
+            a.dropdown-item.p-1.text-center(href='#')   
+              div see all notifictions
+          //- notification comments  
+       div.notification-container.dropdown.pt-3.pe-4  
+        i(class="fas fa-comments notifiction-comments" "#navbarScrollingDropdown" data-bs-toggle='dropdown' aria-expanded='false')
+        ul.dropdown-menu(aria-labelledby='navbarScrollingDropdown')
+            li.bg-dark.p-2
+              h6.text-center.text-white notifictions
+            li
+              a.dropdown-item.p-1(href='#')
+                div.row
+                  div.col-2
+                    img.rounded-circle.p-1(src="img/man.jpg")
+                  div.col-10.content-notification
+                    div.fw-bold update complete
+                    div 
+                      |Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    div 30m ago
+            li
+              a.dropdown-item.p-1(href='#')
+               div.row
+                  div.col-2
+                   img.rounded-circle.p-1(src="img/man.jpg")
+                  div.col-10.content-notification
+                    div.fw-bold update complete
+                    div 
+                      |Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    div 30m ago    
+            li
+              a.dropdown-item.p-1(href='#')
+               div.row
+                  div.col-2
+                    img.rounded-circle.p-1(src="img/man.jpg")
+                  div.col-10.content-notification
+                    div.fw-bold new connectin
+                    div 
+                      |Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    div 30m ago   
+            li
+              a.dropdown-item.p-1.text-center(href='#')   
+                div see all notifictions    
+
+        
+
+        //- notification profil 
+
+       div(class="dropdown ")
+          div( "#navbarScrollingDropdown" data-bs-toggle='dropdown' aria-expanded='false' href='#')
+            img.p-1(src="img/man.jpg")
+            span.pe-3.text-white Kamal Lala
+            i(class="fas fa-chevron-circle-down")
+          ul.dropdown-menu.p-2(aria-labelledby='navbarScrollingDropdown')
+             li
+              a.dropdown-item
+               i.fas.fa-user.fa-lg.pe-3.text-dark
+               span profil
+              a.dropdown-item 
+               i.fas.fa-chart-line.fa-lg.pe-3.text-dark 
+               span analytics
+              hr 
+             li
+              a.dropdown-item
+               i.fas.fa-question.fa-lg.pe-3.text-dark 
+               span help
+              a.dropdown-item 
+               i.fas.fa-cog.fa-lg.pe-3.text-dark 
+               span sittings
+              hr  
+             li
+              a.dropdown-item log-out
+   .main-content.p-5
+    .container
+     //- headercontent
+     .row.main-content
+       .col-4
+         h1 Deshbard
+       .col-auto.ms-auto
+         nav(aria-label='breadcrumb')
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href='#') Home
+            li.breadcrumb-item
+              a(href='#') Library
+            li.breadcrumb-item.active(aria-current='page') Data
+     //- content
+     .row.content.mt-5
+       .col-md-6
+         .row
+           .col-6
+            .card.text-white.mb-3(style='max-width: 18rem;')
+              .card-header sales
+              .card-body
+                h5.card-title.mb-4 33,333£
+                div.card-text
+                  span.text-danger -3.86
+                  span  Since last week 
+           .col-6
+            .card.text-white.mb-3(style='max-width: 18rem;')
+              .card-header Earinigs
+              .card-body
+                h5.card-title.mb-4 33,333£
+                div.card-text
+                  span.text-danger -3.86
+                  span  Since last week
+           .col-6
+            .card.text-white.mb-3(style='max-width: 18rem;')
+              .card-header visitors
+              .card-body
+                h5.card-title.mb-4 33,333£
+                div.card-text
+                  span.text-danger -3.86
+                  span  Since last week
+           .col-6
+            .card.text-white.mb-3(style='max-width: 18rem;')
+              .card-header orders
+              .card-body
+                h5.card-title.mb-4 33,333£
+                div.card-text
+                  span.text-danger -3.86
+                  span  Since last week                       
+       .col-md-6  test   
+          
+          
+
+
+
+
+
+
+
+
+

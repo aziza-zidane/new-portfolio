@@ -1,0 +1,27 @@
+.sitting-box {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(#000000, 0.8);
+  color: #e5e7e9;
+  height: 100%;
+  z-index: 555;
+  transition: 1s;
+  &.hide-setting
+  {
+    right: -300px;  
+  }
+  .toggle-setting {
+    position: absolute;
+    top: 147;
+    right: 300px;
+    cursor: pointer;
+    background-color: #04060b;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+   
+}
+
+}
+ 
